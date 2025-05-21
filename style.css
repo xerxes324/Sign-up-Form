@@ -15,6 +15,10 @@ html,body
     height : 100%;
 }
 
+#label1,#label2,#label3
+{
+    margin-left: 10px;
+}
 #leftside 
 {
     flex-basis: 40%;
@@ -33,5 +37,133 @@ html,body
 #rightside
 {
     flex-basis: 60%;
-    background-color: red;
+    flex-direction: column;
+    display:flex;
+}
+
+#top
+{
+    background-color: white;
+    flex-grow:1;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+}
+
+#welcome_1
+{
+    margin-left: -50px;
+    align-self:center;
+    margin-bottom: 20px;
+    font-size:large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#welcome_2
+{
+    align-self: flex-start;
+    margin-left: 95px;
+    font-size:larger
+}
+
+#middle
+{
+    border-radius: 10px;
+    background-color: rgb(214, 211, 211);
+    box-shadow: 7px 7px 4px black;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    margin:10px;
+}
+
+#firstname, #lastname, #pwd, #emailid, #phone
+{
+    height : 20px;
+    background-color: aliceblue;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 60px;
+}
+
+#firstname:focus, #lastname:focus, #emailid:focus, #pwd:focus, #phone:focus
+{
+    background-color: rgb(169, 169, 216); 
+}
+
+/* #emailid , #phone
+{
+    height: 20px;
+    margin-top: 30px;
+    background-color: aliceblue;
+    margin-bottom: 30px;
+    margin-right:60px;
+}
+
+#pwd
+{
+    height:20px;
+    background-color: aliceblue;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 60px;
+     */
+
+#fieldset1, #fieldset2, #fieldset3
+{
+    margin-top: 15px;
+    margin-bottom:5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+#l1, #l2, #l3
+{
+    font-size: larger;
+    font-family: monospace;
+    margin-left: 10px;
+}
+
+#header1
+{
+    margin-left: 20px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#bottom
+{
+    background-color: white;
+    flex-grow: 1;
+    justify-content: left;
+    align-items: center;
+    margin-left: 40px;
+    flex-direction: column;
+}
+
+#account
+{
+    background-color: rgb(64, 168, 64);
+    width : fit-content;
+    height: fit-content;
+    margin-top: 20px;
+    border-radius: 7px;
+    padding:7px;
+    font-size: larger;
+    color: white;
+    box-shadow: 3px 3px 5px black;
+}
+
+#account:active
+{
+    box-shadow: 2px 2px 5px black;
+}
+#login
+{
+    margin-top: 20px;
+}
+
+#logcol
+{
+    color: black;
 }
